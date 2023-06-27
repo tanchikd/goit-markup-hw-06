@@ -40,6 +40,79 @@
             </li>
           </ul>
         </address>
+        <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="22" viewBox="0 0 32 22" fill="none">
+            <g clip-path="url(#clip0_297068_2681)">
+              <path
+                d="M1.34814 20.0431H30.8866M1.34814 10.7354H30.8866M1.34814 1.42773H30.8866"
+                stroke="#2E2F42"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round" />
+            </g>
+            <defs>
+              <clipPath id="clip0_297068_2681">
+                <rect width="32" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu js-menu-container">
+        <div>
+          <button type="button" class="close-menu-btn js-close-menu">
+            <svg width="8" height="8">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link active link">Studio</a></li>
+            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Portfolio</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link link">Contacts</a></li>
+          </ul>
+        </div>
+        <div>
+          <address class="mob-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a href="tel:+110001111111" class="mob-address-link link">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mob-address-mail">
+                <a href="mailto:info@devstudio.com" class="mob-address-mail-link link">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-list list">
+            <li class="footer-soc-wrap">
+              <a class="footer-soc-link link" href="">
+                <svg class="soc-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-wrap">
+              <a class="footer-soc-link link" href="">
+                <svg class="soc-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-wrap">
+              <a class="footer-soc-link link" href="">
+                <svg class="soc-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-soc-wrap">
+              <a class="footer-soc-link link" href="">
+                <svg class="soc-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -106,9 +179,27 @@
         <div class="container">
           <h2 class="job-title">What are we doing</h2>
           <ul class="job-list list">
-            <li class="job-item"><img src="./images/monitor.jpg" alt="monitor" width="360" /></li>
-            <li class="job-item"><img src="./images/messenger.jpg" alt="messenger" width="360" /></li>
-            <li class="job-item"><img src="./images/phone.jpg" alt="phone" width="360" /></li>
+            <li class="job-item">
+              <img
+                srcset="./images/monitor.jpg 1x, ./images/monitor-2x.jpg 2x"
+                src="./images/monitor.jpg"
+                alt="monitor"
+                width="360" />
+            </li>
+            <li class="job-item">
+              <img
+                srcset="./images/messenger.jpg 1x, ./images/messenger-2x.jpg 2x"
+                src="./images/messenger.jpg"
+                alt="messenger"
+                width="360" />
+            </li>
+            <li class="job-item">
+              <img
+                srcset="./images/phone.jpg 1x, ./images/phone-2x.jpg 2x"
+                src="./images/phone.jpg"
+                alt="phone"
+                width="360" />
+            </li>
           </ul>
         </div>
       </section>
@@ -117,7 +208,11 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/Guerrero.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/Guerrero.jpg 1x, ./images/Guerrero-2x.jpg 2x"
+                src="./images/Guerrero.jpg"
+                alt="Mark Guerrero"
+                width="264" />
               <div class="team-item-descriptin">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -154,7 +249,11 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/Ford.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/Ford.jpg 1x, ./images/Ford-2x.jpg 2x"
+                src="./images/Ford.jpg"
+                alt="Tom Ford"
+                width="264" />
               <div class="team-item-descriptin">
                 <h3 class="team-subtitle">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -191,7 +290,11 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/Garcia.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/Garcia.jpg 1x, ./images/Garcia-2x.jpg 2x"
+                src="./images/Garcia.jpg"
+                alt="Camila Garcia"
+                width="264" />
               <div class="team-item-descriptin">
                 <h3 class="team-subtitle">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -228,7 +331,11 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/Wilson.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/Wilson.jpg 1x, ./images/Wilson-2x.jpg 2x"
+                src="./images/Wilson.jpg"
+                alt="Daniel Wilson"
+                width="264" />
               <div class="team-item-descriptin">
                 <h3 class="team-subtitle">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -268,7 +375,7 @@
         </div>
       </section>
       <section class="customers">
-        <div class="container">
+        <div class="container custom-container">
           <h2 class="team-title">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item-wrap">
@@ -318,8 +425,7 @@
       </section>
     </main>
     <footer class="footer-down">
-      <div class="container footer-wrap">
-        <!-- <div class="footer-wrap"> -->
+      <div class="container footer-wrap custom-container">
         <div class="footer-wrap-logo">
           <a href="./index.html" class="footer-logo link">Web <span class="logo-text-color">Studio</span></a>
           <p class="footer-text">
@@ -440,6 +546,12 @@
         </form>
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
